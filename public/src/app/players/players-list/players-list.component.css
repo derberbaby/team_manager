@@ -1,0 +1,21 @@
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+}
+
+th{
+	text-align: left;
+}
+
+button {
+	background-color: red;
+	color: white;
+}
+
+div {
+	padding: 20px;
+}

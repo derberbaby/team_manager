@@ -1,0 +1,16 @@
+<div>
+	<table>
+		<tr>
+			<td>Name</td>
+			<td>Actions</td>
+		</tr>
+		<tr *ngFor="let player of players">
+			<td>{{ player.name }}</td>
+			<td>
+				<button (click)="play(player._id)" [ngClass]="{'green': player.game2 == 'playing'}">Playing</button>
+				<button (click)="out(player._id)" [ngClass]="{'red': player.game2 == 'notplaying'}">Not Playing</button>
+				<button (click)="dunno(player._id)" [ngClass]="{'yellow': player.game2 == 'undecided'}">Undecided</button>
+			</td>
+		</tr>
+	</table>
+</div>
